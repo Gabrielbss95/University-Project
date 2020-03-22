@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Novo Parágrafo</title> 	
+	<style> 
+		.classelegal { border: solid black 20px ; } 
+	</style>
+</head>
+<body>
+	<h1>Exemplo</h1>
+	<p id="firstP">Primeiro Paragráfo</p> 
+	<p id="firstP2">Segundo Paragráfo</p> 
+	<p id="firstP3">Terceiro Paragráfo</p> 
+</body>
+
+<script>
+	function min_um(a,b) {
+		return (a <= b) ? a : b
+	}
+	// Exercicio 2
+	function min_dois(a,b) {
+		let result = null
+		if (a <= b) {
+			result = a
+		} else {
+			result = b
+		}
+		return result;
+	}	
+	let result = min_um(10,20);
+	alert(result);
+
+	function numElevado(x,y) {
+		let resposta = Math.pow(x,y);
+		return resposta;
+	}
+
+	let var1 = numElevado( 3, 4);
+	console.log("O resultado da 2 é: " + var1);
+
+	// Exercicio 3
+
+	let x1 = prompt("Exercicio 3 - " + "Declare um valor para x: ");
+	let y1 = prompt("Exercicio 3 - " + "Declare um valor para y: ");
+
+	let varr1 = numElevado(x1, y1);
+	console.log("O Resultado da 3 é: " + varr1);
+
+	// Exercicio 4
+
+	let xx = prompt ("Exercicio 4 - " + "Declare um numero para xx: ");
+	let yy = prompt ("Exercicio 4 - " + "Declare um numero para yy: ");
+
+	function maiorQue(x, y){
+		let resp4 = Math.max(x,y);
+		return resp4;
+	}
+	
+	let varr = maiorQue(xx, yy);
+	console.log("Exe 4: O numero maior é: "+ varr);
+
+	//Exercicio 5
+
+	let aluno = {}
+	aluno.nome = "Gabriel";
+	console.log("O aluno se chama " + aluno.nome);
+
+	aluno.sobrenome = "Barbosa";
+	console.log("O sobrenome é " + aluno.sobrenome);
+
+	aluno.nome = "Mãe do Gabriel";
+	console.log("O nome trocado é? " + aluno.nome);
+
+	delete aluno.nome;
+	console.log(aluno.nome);
+
+	console.log(aluno.hasOwnProperty("time"));
+
+	//Exercicio 6
+
+	let salarios= {
+		Neymar:1000,
+		Ronaldinho : 900,
+		Ronaldo : 950,
+	}
+
+	function somaSalario(){
+		let somaSal = (salarios.Neymar + salarios.Ronaldinho + salarios.Ronaldo);
+		return somaSal;
+	}
+
+	let resultSoma = somaSalario();
+	console.log("Exercicio 6 - O resultado da soma dos salarios é de " + resultSoma);
+	alert(" A soma dos salarios: " + resultSoma);
+
+
+</script>
+</html>
